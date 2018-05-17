@@ -1,0 +1,21 @@
+body {
+    background-image: url("../images/batman_bg.jpg");
+    background-size: 100%;
+    font-family: 'Architects Daughter', cursive;
+    background-repeat: inherit;
+}
+
+h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 90px;
+    font-weight: bolder;
+
+}
+
+#question {
+    background-color: #aeada8;
+    height: 20rem;
+    opacity: 20%;
+    margin-top: 3rem;
+    border: solid 1px;
+}
