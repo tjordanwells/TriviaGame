@@ -12,10 +12,20 @@ h1 {
 
 }
 
-#question {
+#questions {
     background-color: #aeada8;
     height: 20rem;
     opacity: 20%;
     margin-top: 3rem;
     border: solid 1px;
+    text-align: center;
+}
+
+.answer {
+    background-color: #232320;
+    color: #ffffff;
+}
+
+li:hover {
+    cursor: pointer;
 }
