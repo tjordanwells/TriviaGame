@@ -52,43 +52,43 @@ $(document).ready(function () {
         $("#answer2").text(answerArray[0][1]);
         $("#answer3").text(answerArray[0][2]);
 
-        if (timeRemaining === 0) {
-            $("#question").text(questionArray[1]);
-            $("#answer1").text(answerArray[1][0]);
-            $("#answer2").text(answerArray[1][1]);
-            $("#answer3").text(answerArray[1][2]);
-        }
 
-        var intervalId;
-
-        var timeRemaining = 30;
-    
-        function run() {
-            clearInterval(intervalId);
-            intervalId = setInterval(decrement, 1000);
-        }
-    
-        function decrement() {
-            timeRemaining--;
-    
-            $("#time").text("Time Remaining: " + timeRemaining);
-            console.log(timeRemaining)
-    
-            if (timeRemaining === 0) {
-                alert("Time's up!");
-                stop();
-            }
-    
-        }
-    
-        function stop() {
-            clearInterval(intervalId);
-        }
 
 
 
     });
 
 
+
+
+
+
+    // time functions
+
+    var intervalId;
+
+    var timeRemaining = 30;
+
+    function run() {
+        clearInterval(intervalId);
+        intervalId = setInterval(decrement, 1000);
+    }
+
+    function decrement() {
+        timeRemaining--;
+
+        $("#time").text("Time Remaining: " + timeRemaining);
+        console.log(timeRemaining)
+
+        if (timeRemaining === 0) {
+            alert("Time's up!");
+            stop();
+        }
+
+    }
+
+    function stop() {
+        clearInterval(intervalId);
+    }
 
 });
